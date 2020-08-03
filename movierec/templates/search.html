@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <h1>hello world!</h1>
+   <form action="result" method="post">
+   	{% csrf_token %}
+   	  Enter the movie name :<input type='text' name='movie'><br>
+   	  <input type="submit">
+   </form>
+{% endblock %}
